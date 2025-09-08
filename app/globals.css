@@ -1,0 +1,11 @@
+/* Global styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom theme */
+body {
+  background-color: #f8f8f8; /* creamy white */
+  color: #222; /* dark gray/black text */
+  font-family: sans-serif;
+}
