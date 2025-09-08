@@ -1,20 +1,16 @@
-import './globals.css'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import type { Metadata } from "next";
+import "../globals.css";   // ✅ fixed import path
+import { ReactNode } from "react";
 
-export const metadata = {
-  title: '1manventure',
-  description: 'Course site - 1manventure',
-}
+export const metadata: Metadata = {
+  title: "1manventure",
+  description: "Learn, grow, and take charge of your venture.",
+};
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-cream text-dark">
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
-  )
+  );
 }
